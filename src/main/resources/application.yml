@@ -1,0 +1,20 @@
+spring:
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://ecs01:3306/assignCharSet?serverTimezone=GMT%2B8
+        username: root
+        password: huangxiaodong
+        type: com.alibaba.druid.pool.DruidDataSource
+        druid:
+            max-active: 10
+            min-idle: 2
+            validation-query: select count(1) from user
+            stat-view-servlet:
+                login-username: admin
+                enabled: true  # 开始监控视图的Servlet
+                login-password: admin
+                allow:
+                deny:
+                url-pattern: /druid/*
+mybatis-plus:
+    mapper-locations: /mapper/*.xml

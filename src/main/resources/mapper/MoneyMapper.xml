@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.study.delete.mapper.MoneyMapper">
+  <resultMap id="BaseResultMap" type="com.study.delete.domain.Money">
+    <!--@mbg.generated-->
+    <!--@Table money-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="count" jdbcType="DECIMAL" property="count" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, `count`
+  </sql>
+</mapper>
